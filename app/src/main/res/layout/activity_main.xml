@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topView1_p1"
+        android:layout_width="0dp"
+        android:layout_height="371dp"
+        android:background="#FF5500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/topView2_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_wave__2_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView1_p1" />
+
+    <TextView
+        android:id="@+id/accountHavingTxt_p1"
+        android:layout_width="238dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/alreadyhaveacc"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/contact_logo_p1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/topView1_p1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subof_already"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/logintxt"
+        android:textColor="#FFFDFD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/divider_UI2"
+        app:layout_constraintEnd_toEndOf="@+id/accountHavingTxt_p1"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="@+id/accountHavingTxt_p1"
+        app:layout_constraintTop_toBottomOf="@+id/accountHavingTxt_p1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/contact_logo_p1"
+        android:layout_width="84dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="@+id/accountHavingTxt_p1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/accountHavingTxt_p1"
+        app:layout_constraintVertical_bias="0.484"
+        app:srcCompat="@drawable/contact_logo" />
+
+    <View
+        android:id="@+id/divider_UI2"
+        android:layout_width="360dp"
+        android:layout_height="2dp"
+        android:background="@drawable/divider"
+        app:layout_constraintBottom_toTopOf="@+id/subLogo_p1"
+        app:layout_constraintEnd_toEndOf="@+id/contact_logo_p1"
+        app:layout_constraintStart_toStartOf="@+id/accountHavingTxt_p1"
+        app:layout_constraintTop_toBottomOf="@+id/accountHavingTxt_p1"
+        app:layout_constraintVertical_bias="0.449" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="156dp"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/plantanime_3" />
+
+    <TextView
+        android:id="@+id/subLogo_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#FF5500"
+        android:text="@string/SI_p1"
+        android:textColor="#421919"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lottieAnimationView2" />
+
+    <TextView
+        android:id="@+id/subofsub_UI2p1"
+        android:layout_width="224dp"
+        android:layout_height="71dp"
+        android:text="@string/subofsub_UIP1"
+        android:textColor="#DDD2D2"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subLogo_p1"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <EditText
+        android:id="@+id/email_p1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="9dp"
+        android:ems="10"
+        android:hint="@string/Email_p1"
+        android:importantForAutofill="no"
+        android:inputType="textEmailSubject"
+        android:textColorHint="#807B7B"
+        app:layout_constraintBottom_toTopOf="@+id/pass_p1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView2_p1" />
+
+    <EditText
+        android:id="@+id/pass_p1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="9dp"
+        android:ems="10"
+        android:hint="@string/pass_p1"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColorHint="#807B7B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_p1" />
+
+    <Button
+        android:id="@+id/loginButton_p1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_borderbtn"
+        android:text="@string/loginBtn_p1"
+        android:textStyle="bold"
+        app:backgroundTint="#FF5500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_p1" />
+
+    <TextView
+        android:id="@+id/forgetPass_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/forgetPass_p1"
+        android:textColor="#040404"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/registerBtn_p1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton_p1" />
+
+    <Button
+        android:id="@+id/registerBtn_p1"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_btn2"
+        android:text="@string/registerBtn_p1"
+        android:textStyle="bold"
+        app:backgroundTint="#C62828"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgetPass_p1"
+        app:layout_constraintVertical_bias="0.673" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
