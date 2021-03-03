@@ -1,10 +1,10 @@
 package com.vasagan.mo_land;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.airbnb.lottie.LottieAnimationView;
 
@@ -31,7 +31,7 @@ public class intropage extends AppCompatActivity {
                 Intent intent = new Intent(intropage.this, MainActivity.class);
                 startActivity(intent);
             }
-        },12000);
+        },11000);
 
         //wiring components of UI_1
 

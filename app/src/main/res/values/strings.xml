@@ -12,6 +12,13 @@
     <string name="alreadyhaveacc">Already have an Account ?</string>
     <string name="logintxt">Login Here</string>
     <string name="todo">TODO</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="showhidepass" />
+    <string name="showpass">ShowHidePass</string>
+    <string name="register">Register</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="postal_code">Postal code</string>
 
 
 </resources>
