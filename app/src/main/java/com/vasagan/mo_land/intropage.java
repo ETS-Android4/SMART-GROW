@@ -30,6 +30,7 @@ public class intropage extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(intropage.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         },11000);
 
@@ -48,7 +49,7 @@ public class intropage extends AppCompatActivity {
         logo_intro.animate().translationX(1700).setDuration(2000).setStartDelay(4000);
         smartgrow_intro.animate().translationX(-1600).setDuration(2100).setStartDelay(4000);
         subintro.animate().translationX(1600).setDuration(2100).setStartDelay(4000);
-        lottieAnimationView.animate().translationY(-1300).setDuration(3000).setStartDelay(4000);
+        lottieAnimationView.animate().translationY(-1400).setDuration(2000).setStartDelay(3000);
 
 
     }

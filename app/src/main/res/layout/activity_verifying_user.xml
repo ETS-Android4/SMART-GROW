@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".verifyingUser">
+
+    <View
+        android:id="@+id/viewTop_cnfrmUsrPg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_wave__2_"
+        app:layout_constraintBottom_toTopOf="@id/cnfrmUsr_TXT"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/potplantIMG"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingLeft="200dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072"
+        app:srcCompat="@drawable/potplantimg" />
+
+    <TextView
+        android:id="@+id/cnfrmUsr_TXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:text="CONFIRMING\nUSER DETAILS"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/potplantIMG"
+        app:layout_constraintEnd_toEndOf="@+id/potplantIMG"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.735" />
+
+    <View
+        android:id="@+id/divider_cnfrmUsrPG"
+        android:layout_width="290dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/divider"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/usernameTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="65dp"
+        android:text="UserName :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/usernameFrmSgnUpPg"
+        app:layout_constraintTop_toBottomOf="@id/potplantIMG"
+
+        />
+
+    <TextView
+        android:id="@+id/usernameFrmSgnUpPg"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="6dp"
+        app:layout_constraintBottom_toBottomOf="@id/usernameTXT"
+        app:layout_constraintLeft_toRightOf="@id/usernameTXT"
+        app:layout_constraintTop_toTopOf="@id/usernameTXT" />
+
+    <TextView
+        android:id="@+id/mailidTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Email ID \t\t\t:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/usernameTXT"
+        app:layout_constraintRight_toLeftOf="@id/mailidFrmSgnUpPg"
+        app:layout_constraintTop_toBottomOf="@id/usernameTXT"
+
+        />
+
+    <TextView
+        android:id="@+id/mailidFrmSgnUpPg"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="6dp"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        app:layout_constraintBottom_toBottomOf="@id/mailidTXT"
+        app:layout_constraintLeft_toRightOf="@id/mailidTXT"
+        app:layout_constraintRight_toRightOf="@id/usernameFrmSgnUpPg"
+        app:layout_constraintTop_toTopOf="@id/mailidTXT" />
+
+    <TextView
+        android:id="@+id/PassTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Password\t:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/mailidTXT"
+        app:layout_constraintRight_toLeftOf="@id/passFrmSgnUpPg"
+        app:layout_constraintTop_toBottomOf="@id/mailidTXT" />
+
+    <TextView
+        android:id="@+id/passFrmSgnUpPg"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:drawableLeft="@drawable/ic_baseline_password_24"
+        android:drawablePadding="6dp"
+        app:layout_constraintBottom_toBottomOf="@id/PassTXT"
+        app:layout_constraintLeft_toRightOf="@id/PassTXT"
+        app:layout_constraintRight_toRightOf="@id/mailidFrmSgnUpPg"
+        app:layout_constraintTop_toTopOf="@id/PassTXT" />
+
+    <TextView
+        android:id="@+id/contactnumTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Contact Number\t:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/PassTXT"
+        app:layout_constraintRight_toLeftOf="@id/contactnumFrmSgnPg"
+        app:layout_constraintTop_toBottomOf="@id/PassTXT" />
+
+    <TextView
+        android:id="@+id/contactnumFrmSgnPg"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="6dp"
+        app:layout_constraintBottom_toBottomOf="@id/contactnumTXT"
+        app:layout_constraintLeft_toRightOf="@id/contactnumTXT"
+        app:layout_constraintRight_toRightOf="@id/passFrmSgnUpPg"
+        app:layout_constraintTop_toTopOf="@id/contactnumTXT"
+
+        />
+
+    <Button
+        android:id="@+id/cnfrmRegisterBtn"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rounded_borderbtn"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/alegreya_sans_sc_bold"
+        android:text="CONFIRM REGISTRATION"
+        android:textColor="#3C3B3B"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:backgroundTint="#F8F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactnumTXT"
+        app:layout_constraintVertical_bias="0.728"
+        android:layout_marginBottom="4dp"
+        android:onClick="storeData"
+        />
+
+    <View
+        android:id="@+id/btmViewCnfrmUsrPg"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cnfrmRegisterBtn"
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@drawable/baseroundededge"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar_CnfrmUsrPg"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

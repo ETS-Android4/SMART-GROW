@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/bg_intro"
-        android:layout_width="437dp"
-        android:layout_height="920dp"
+        android:layout_width="678dp"
+        android:layout_height="921dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,14 +44,14 @@
         android:id="@+id/subintro"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/smartgrow_intro"
-        app:layout_constraintVertical_bias="0.703"
-        app:srcCompat="@drawable/subintro"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_intro"
+        app:layout_constraintVertical_bias="0.394"
+        app:srcCompat="@drawable/subintro" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieAnimationView2"

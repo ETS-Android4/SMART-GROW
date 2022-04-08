@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-     xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signup"
-    android:orientation="vertical"
     android:background="@color/white"
-    android:padding="20dp"
-    >
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".signup">
 
     <ImageView
         android:id="@+id/img_signup"
         android:layout_width="180dp"
         android:layout_height="180dp"
-
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/signupimg"
+        app:layout_constraintBottom_toTopOf="@id/divider_signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/signupimg"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/txt1_signup"
@@ -53,27 +51,27 @@
         app:layout_constraintVertical_bias="0.593" />
 
     <View
+        android:id="@+id/divider_signup"
         android:layout_width="340dp"
         android:layout_height="2dp"
-        android:id="@+id/divider_signup"
-        app:layout_constraintTop_toBottomOf="@id/img_signup"
+        android:background="@drawable/divider"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@id/Username_snUp"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:background="@drawable/divider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0"
-        />
+        app:layout_constraintTop_toBottomOf="@id/img_signup" />
 
     <EditText
         android:id="@+id/Username_snUp"
         android:layout_width="330dp"
         android:layout_height="45dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:drawableLeft="@drawable/ic_baseline_account_circle_24"
         android:drawablePadding="12dp"
         android:hint="User Name"
         android:inputType="text"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@id/Email_snUp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider_signup" />
@@ -87,24 +85,10 @@
         android:drawablePadding="12dp"
         android:hint="Email"
         android:inputType="text|textEmailAddress"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@id/Password_snUp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Username_snUp" />
-
-    <EditText
-        android:id="@+id/Password_snUp"
-        android:layout_width="330dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="15dp"
-        android:drawableLeft="@drawable/ic_baseline_password_24"
-        android:drawablePadding="12dp"
-        android:hint="Password"
-        android:inputType="number|textPassword"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Email_snUp" />
 
 
     <EditText
@@ -116,6 +100,7 @@
         android:drawablePadding="12dp"
         android:hint="Address"
         android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/postalcode_snUp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -130,6 +115,7 @@
         android:drawablePadding="12dp"
         android:hint="@string/postal_code"
         android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@id/contactnum_snUp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -139,46 +125,49 @@
         android:id="@+id/contactnum_snUp"
         android:layout_width="330dp"
         android:layout_height="45dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
         android:drawableLeft="@drawable/ic_baseline_phone_24"
         android:drawablePadding="12dp"
         android:hint="@string/contact_number"
         android:inputType="number"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="@id/bcktoMA_snUp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/postalcode_snUp"
-        android:drawableStart="@drawable/ic_baseline_phone_24"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@id/postalcode_snUp" />
 
     <Button
+        android:id="@+id/Register_snUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Register_snUp"
-        app:layout_constraintTop_toBottomOf="@id/contactnum_snUp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="35dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginRight="25dp"
-        android:text="@string/register"
-        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="3dp"
         android:backgroundTint="@color/white"
+        android:text="register"
+        android:onClick="registerBtnSgnUpPg"
         android:textColor="@color/oranjellow"
-        android:layout_marginEnd="25dp" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/bcktoMA_snUp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactnum_snUp"
+
+        />
 
     <Button
         android:id="@+id/bcktoMA_snUp"
         android:layout_width="60dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginRight="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="150dp"
         android:background="@drawable/round_btn"
         android:backgroundTint="@color/white"
         android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:drawablePadding="15dp"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@id/Register_snUp"
+        app:layout_constraintRight_toLeftOf="@id/Register_snUp"
         app:layout_constraintTop_toBottomOf="@id/contactnum_snUp" />
 
     <ProgressBar
@@ -196,6 +185,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/Password_snUp"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_baseline_password_24"
+        android:drawablePadding="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/address_snUp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email_snUp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

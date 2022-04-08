@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".reference"
+    tools:showIn="@layout/activity_reference">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:padding="15dp"
+        android:text="\t\t\t\t\t\t\t\t\t\t\t\t\tPlants are important segment of life system. These are not only
+a major component for construction of biodiversity but also utilized
+for various purpose among the human beings. Crops are diversified in
+different ecological areas. As per demand and plant adaption in different
+zones of natural ecosystem these are showing their presence and are
+cultivated for certain purposes like for fuel, food, fodder, medicine
+etc. The rate of crop production is variable based on the several biotic
+and abiotic factors. Overall an environmental effect on production
+rate is remarkable for individual crop species cultivated by the peoples
+for specific targets. Plants are also a major source of food, oil, pulses,
+cereals etc. Basics of cropping techniques requires some important
+steps to follow for successful growth and development of plants which
+further leads to better crop production in certain cropping crops.\n
+Step 1: \nSelection of the Cropping Field
+It is a first stage for cropping of any crop in the field. A better
+field selection should be done on the basis of better soil quality, water
+facility, easy to reach etc. A field should be carefully selected as per
+demand of cropping plants to support rich production.\n
+Step 2: \nPreparation of the Cropping Field
+Secondly, just after selection of the suitable field there is a need
+to prepare the field well for certain crop varieties. Better ploughing,
+labeling, bed formation, weeding etc. are important practices which
+should be properly done following suitable techniques which further
+utilized as a better platform for different crop species.\n
+Step 3: \nSelection of Crop Species
+As per adaption of the crop in particular climatic zones and their
+demand these should be identified and selected to grow in prepared
+fields.\n
+Step 4: \nPreparation of the Crop Plants
+Selected crop varieties need for proper preparation to grow in
+suitable time of cropping. Crop plants can be propagated either by
+their mature seeds or by utilizing their vegetative parts/modified plant
+structures such as bulb, tuber, rhizome, corm etc. All the plant materials
+found to be suitable to propagate further in cropping field should be
+prepared well following suitable techniques such as seeds should be
+treated before cultivation and modified plant parts need to develop new
+buds which further become capable to development new plants like
+their parental ones. All plant propagules should be prepared/developed
+well before of cropping. It is done for their maximum germination/
+development of new plant species in the field.\n
+Step 5: \nSowing/Cultivation
+In prepared fields plant propagules should be sown/cultivated
+following better techniques for rich plant population development in
+the field which further leads to rich plant development.\n
+Step 6: \nManagement
+Water
+Just after of cropping there is an urgent need of light irrigation in
+cropping field for initiation of embryonic growth, bud initiation etc.
+Water should be supplied as per need of the crops in the field.
+Weed
+These are undesirable and unwanted plants in cropping fields
+which grows naturally. Weeding should be done carefully without
+damaging of the mother plants.
+Nutrients
+Each plant requires micro and macro nutrients to support their
+growth and development as well as for production. So, it should be
+supplied in the field in balanced manner.
+Protection
+The crops which are grown in the field should be protected against
+various biotic and abiotic agents and also from diseases to minimize
+the crop yields loss.\n
+Step 7: \nHarvesting
+At the endings of life or after maturation of crops are indicating by
+their morphological changes like colour changes from green to yellowbrown. Harvesting should be done in suitable time and techniques
+without damaging of the plants but some crops like paddy etc. are
+completely harvested. Better harvested plant products registered better
+prize in market.\n
+Step 8: \nCollection
+Harvested plant materials should be collected carefully, it should
+be made sundry to reduce the moisture level and toi prevent microbial
+infection.\n
+Step 9: \nStorage
+Plants products are dried and stored without damaging grains/plant
+parts. After utilizing a specific amount of Plant products are to be sold
+in market in better prize. Finally, it is concluded that above described
+steps are important channel which not only plays an important role in
+better plant growth but also significant in crop production." />
+</androidx.core.widget.NestedScrollView>

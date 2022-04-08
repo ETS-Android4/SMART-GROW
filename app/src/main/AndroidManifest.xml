@@ -11,8 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartGrow">
-        <activity android:name=".userland"></activity>
-        <activity android:name=".signup" />
+        <activity
+            android:name=".reference"
+            android:label="@string/title_activity_reference"
+            android:theme="@style/Theme.SmartGrow.NoActionBar"></activity>
+        <activity android:name=".irrigation_status" />
+        <activity android:name=".Dashboard" />
+
+
+        <activity android:name=".verifyingUser" />
+        <activity android:name=".userland" />
         <activity android:name=".intropage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +29,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+        <activity android:name=".signup" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
